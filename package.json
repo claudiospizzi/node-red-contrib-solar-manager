@@ -1,11 +1,13 @@
 {
-  "name": "node-red-contrib-changeme",
+  "name": "node-red-contrib-solar-manager",
   "version": "0.0.0",
-  "description": "changeme nodes for Node-RED.",
+  "description": "Solar Manager nodes for Node-RED.",
   "keywords": [
     "node-red",
     "node-red-contrib",
-    "changeme"
+    "solar-manager",
+    "solar",
+    "manager"
   ],
   "scripts": {
     "add-node": "node ./.utils/template/add-node.js",
@@ -34,12 +36,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/claudiospizzi/node-red-contrib-changeme.git"
+    "url": "git+https://github.com/claudiospizzi/node-red-contrib-solar-manager.git"
   },
   "bugs": {
-    "url": "https://github.com/claudiospizzi/node-red-contrib-changeme/issues"
+    "url": "https://github.com/claudiospizzi/node-red-contrib-solar-manager/issues"
   },
-  "homepage": "https://github.com/claudiospizzi/node-red-contrib-changeme#readme",
+  "homepage": "https://github.com/claudiospizzi/node-red-contrib-solar-manager#readme",
   "node-red": {
     "nodes": {}
   },
