@@ -1,6 +1,6 @@
 [![node-red-contrib](https://img.shields.io/badge/node--red-node--red--contrib--solar-manager-aa4444.svg?style=flat-square)](https://flows.nodered.org/node/node-red-contrib-solar-manager)
 [![npm](https://img.shields.io/npm/v/node-red-contrib-solar-manager.svg?style=flat-square)](https://www.npmjs.com/package/node-red-contrib-solar-manager)
-[![build](https://img.shields.io/github/workflow/status/claudiospizzi/node-red-contrib-intexspa/CI?style=flat-square)](https://github.com/claudiospizzi/node-red-contrib-intexspa/actions/workflows/ci.yml)
+[![build](https://img.shields.io/github/workflow/status/claudiospizzi/node-red-contrib-solar-manager/CI?style=flat-square)](https://github.com/claudiospizzi/node-red-contrib-solar-manager/actions/workflows/ci.yml)
 
 # node-red-contrib-solar-manager
 
