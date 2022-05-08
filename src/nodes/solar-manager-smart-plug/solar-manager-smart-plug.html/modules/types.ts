@@ -1,6 +1,4 @@
-import { EditorNodeProperties } from "node-red";
-import { SolarManagerSmartPlugOptions } from "../../shared/types";
+import { EditorNodeProperties } from 'node-red';
+import { SolarManagerSmartPlugOptions } from '../../shared/types';
 
-export interface SolarManagerSmartPlugEditorNodeProperties
-  extends EditorNodeProperties,
-    SolarManagerSmartPlugOptions {}
+export interface SolarManagerSmartPlugEditorNodeProperties extends EditorNodeProperties, SolarManagerSmartPlugOptions {}

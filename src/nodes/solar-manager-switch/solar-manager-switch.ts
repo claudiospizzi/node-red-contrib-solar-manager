@@ -1,13 +1,10 @@
-import { NodeInitializer } from "node-red";
-import { SolarManager } from "../../modules/SolarManager";
-import { SolarManagerConfigNode } from "../solar-manager-config/modules/types";
-import { SolarManagerSwitchNode, SolarManagerSwitchNodeDef } from "./modules/types";
+import { NodeInitializer } from 'node-red';
+import { SolarManager } from '../../modules/SolarManager';
+import { SolarManagerConfigNode } from '../solar-manager-config/modules/types';
+import { SolarManagerSwitchNode, SolarManagerSwitchNodeDef } from './modules/types';
 
 const nodeInit: NodeInitializer = (RED): void => {
-  function SolarManagerSwitchNodeConstructor(
-    this: SolarManagerSwitchNode,
-    config: SolarManagerSwitchNodeDef
-  ): void {
+  function SolarManagerSwitchNodeConstructor(this: SolarManagerSwitchNode, config: SolarManagerSwitchNodeDef): void {
     RED.nodes.createNode(this, config);
     this.solarManagerConfig = RED.nodes.getNode(config.solarManagerConfig) as SolarManagerConfigNode;
     this.solarManager = new SolarManager(
@@ -16,7 +13,7 @@ const nodeInit: NodeInitializer = (RED): void => {
       this.solarManagerConfig.password,
     );
 
-    this.on("input", (msg, send, done) => {
+    this.on('input', (msg, send, done) => {
       this.status({ fill: 'blue', shape: 'dot', text: 'running' });
       try {
         this.solarManager.setSwitchMode(config.switchId, config.switchMode);
@@ -31,7 +28,7 @@ const nodeInit: NodeInitializer = (RED): void => {
     });
   }
 
-  RED.nodes.registerType("solar-manager-switch", SolarManagerSwitchNodeConstructor);
+  RED.nodes.registerType('solar-manager-switch', SolarManagerSwitchNodeConstructor);
 };
 
 export = nodeInit;

@@ -1,14 +1,14 @@
-import { EditorRED } from "node-red";
-import { SolarManagerSmartPlugEditorNodeProperties } from "./modules/types";
+import { EditorRED } from 'node-red';
+import { SolarManagerSmartPlugEditorNodeProperties } from './modules/types';
 
 declare const RED: EditorRED;
 
-RED.nodes.registerType<SolarManagerSmartPlugEditorNodeProperties>("solar-manager-smart-plug", {
-  category: "solar manager",
-  color: "#f7b264",
+RED.nodes.registerType<SolarManagerSmartPlugEditorNodeProperties>('solar-manager-smart-plug', {
+  category: 'solar manager',
+  color: '#f7b264',
   defaults: {
     name: {
-      value: ""
+      value: '',
     },
     solarManagerConfig: {
       value: '',
@@ -24,13 +24,13 @@ RED.nodes.registerType<SolarManagerSmartPlugEditorNodeProperties>("solar-manager
       value: '',
       type: 'number',
       required: true,
-    }
+    },
   },
   inputs: 1,
   outputs: 1,
-  icon: "smart-plug.png",
-  paletteLabel: "smart plug",
+  icon: 'smart-plug.png',
+  paletteLabel: 'smart plug',
   label: function () {
-    return this.name || "solar manager smart plug";
+    return this.name || 'solar manager smart plug';
   },
 });

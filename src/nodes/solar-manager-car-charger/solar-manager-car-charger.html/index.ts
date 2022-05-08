@@ -1,14 +1,14 @@
-import { EditorRED } from "node-red";
-import { SolarManagerCarChargerEditorNodeProperties } from "./modules/types";
+import { EditorRED } from 'node-red';
+import { SolarManagerCarChargerEditorNodeProperties } from './modules/types';
 
 declare const RED: EditorRED;
 
-RED.nodes.registerType<SolarManagerCarChargerEditorNodeProperties>("solar-manager-car-charger", {
-  category: "solar manager",
-  color: "#f7b264",
+RED.nodes.registerType<SolarManagerCarChargerEditorNodeProperties>('solar-manager-car-charger', {
+  category: 'solar manager',
+  color: '#f7b264',
   defaults: {
     name: {
-      value: ""
+      value: '',
     },
     solarManagerConfig: {
       value: '',
@@ -24,13 +24,13 @@ RED.nodes.registerType<SolarManagerCarChargerEditorNodeProperties>("solar-manage
       value: '',
       type: 'number',
       required: true,
-    }
+    },
   },
   inputs: 1,
   outputs: 1,
-  icon: "car-charger.png",
-  paletteLabel: "car charger",
+  icon: 'car-charger.png',
+  paletteLabel: 'car charger',
   label: function () {
-    return this.name || "solar manager car charger";
+    return this.name || 'solar manager car charger';
   },
 });
