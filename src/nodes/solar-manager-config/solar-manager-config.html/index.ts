@@ -10,7 +10,7 @@ RED.nodes.registerType<SolarManagerConfigEditorNodeProperties>('solar-manager-co
       value: '',
       required: true,
     },
-    solar_manager_id: {
+    solarManagerId: {
       value: '',
       required: true,
     },

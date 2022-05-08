@@ -49,7 +49,10 @@
     "version": ">=2.0.0",
     "nodes": {
       "solar-manager-config": "./dist/nodes/solar-manager-config/solar-manager-config.js",
-      "solar-manager-gateway-status": "./dist/nodes/solar-manager-gateway-status/solar-manager-gateway-status.js"
+      "solar-manager-status": "./dist/nodes/solar-manager-status/solar-manager-status.js",
+      "solar-manager-car-charger": "./dist/nodes/solar-manager-car-charger/solar-manager-car-charger.js",
+      "solar-manager-smart-plug": "./dist/nodes/solar-manager-smart-plug/solar-manager-smart-plug.js",
+      "solar-manager-switch": "./dist/nodes/solar-manager-switch/solar-manager-switch.js"
     }
   },
   "dependencies": {

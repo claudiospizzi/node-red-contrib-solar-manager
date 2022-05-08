@@ -4,7 +4,7 @@ import { SolarManagerConfigNode, SolarManagerConfigNodeDef } from './modules/typ
 const nodeInit: NodeInitializer = (RED): void => {
   function SolarManagerConfigNodeConstructor(this: SolarManagerConfigNode, config: SolarManagerConfigNodeDef): void {
     RED.nodes.createNode(this, config);
-    this.solar_manager_id = config.solar_manager_id;
+    this.solarManagerId = config.solarManagerId;
     this.username = config.username;
     this.password = config.password;
   }

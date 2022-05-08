@@ -8,7 +8,9 @@ Nodes to control the Solar Manager.
 
 ## Description
 
-This contrib module provides nodes to interact with a Solar Manager.
+This contrib module provides nodes to interact with a Solar Manager. It is using the public API of the Solar Manager, can be found on the following link:
+
+* [https://external-web.solar-manager.ch/](https://external-web.solar-manager.ch/)
 
 ## Nodes
 

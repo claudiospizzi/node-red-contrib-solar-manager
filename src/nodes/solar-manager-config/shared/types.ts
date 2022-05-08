@@ -1,5 +1,5 @@
 export interface SolarManagerConfigOptions {
-  solar_manager_id: string;
+  solarManagerId: string;
   username: string;
   password: string;
 }
