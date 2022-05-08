@@ -14,7 +14,29 @@ This contrib module provides nodes to interact with a Solar Manager. It is using
 
 ## Nodes
 
-ToDo.
+### solar manager status
+
+Get the current Solar Manager gateway and device status.
+
+![solar manager status](.assets/solar-manager-status.png)
+
+### solar manager switch
+
+Control the mode for a switch device.
+
+![solar manager switch](.assets/solar-manager-switch.png)
+
+### solar manager smart plug
+
+Control the mode for a smart plug device.
+
+![solar manager smart plug](.assets/solar-manager-smart-plug.png)
+
+### solar manager car charger
+
+Control the mode for a car charger device.
+
+![solar manager car charger](.assets/solar-manager-car-charger.png)
 
 ## Constraint
 
