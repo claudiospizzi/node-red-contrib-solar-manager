@@ -4,7 +4,7 @@
 
 # node-red-contrib-solar-manager
 
-Nodes to control the Solar Manager.
+Nodes to control the [Solar Manager](https://www.solarmanager.ch/), a system to control the smart home power usage and for self-consumption optimization.
 
 ## Description
 
