@@ -4,7 +4,7 @@
 
 # node-red-contrib-solar-manager
 
-Nodes to control the [Solar Manager](https://www.solarmanager.ch/), a system to control the smart home power usage and for self-consumption optimization.
+Nodes to control the [Solar Manager](https://www.solarmanager.ch/), a system to manage the smart home power usage and optimize self-consumption.
 
 ## Description
 
@@ -40,6 +40,6 @@ Control the mode for a car charger device.
 
 ## Constraint
 
-This module is not associated with the [Solar Manager AG](https://www.solarmanager.ch/).
+This module is not associated with the [Solar Manager AG](https://www.solarmanager.ch/). In case of problems with the integration between Node-RED and Solar Manager, open a GitHub issue.
 
 This software is provided "as is", without any guarantees on the function and operation of the Solar Manager device and account. You use it at your own risk. For more details, check the license terms.
