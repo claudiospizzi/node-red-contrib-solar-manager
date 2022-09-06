@@ -1,5 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import { SolarManagerDeviceInfo } from './SolarManagerDeviceInfo';
+import { SolarManagerGatewayData } from './SolarManagerGatewayData';
 import { SolarManagerGatewayInfo } from './SolarManagerGatewayInfo';
 
 /**
@@ -25,6 +26,16 @@ export class SolarManager {
   async getGatewayInfo(): Promise<SolarManagerGatewayInfo> {
     const url = `${this.api_uri}/info/gateway/${this.solarManagerId}`;
     const result = await axios.get<SolarManagerGatewayInfo>(url, this.getRequestConfig());
+    return result.data;
+  }
+
+  /**
+   * Getting detailed information about general values of production, consumption, and battery and array with the latest values of temperature, battery, and power for each device.
+   * @returns The gateway current data.
+   */
+   async getGatewayData(): Promise<SolarManagerGatewayData> {
+    const url = `${this.api_uri}/stream/gateway/${this.solarManagerId}`;
+    const result = await axios.get<SolarManagerGatewayData>(url, this.getRequestConfig());
     return result.data;
   }
 
