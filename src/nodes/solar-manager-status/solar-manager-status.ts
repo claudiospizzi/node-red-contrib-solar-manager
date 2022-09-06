@@ -18,6 +18,7 @@ const nodeInit: NodeInitializer = (RED): void => {
       try {
         msg.payload = {
           gateway: await this.solarManager.getGatewayInfo(),
+          data: await this.solarManager.getGatewayData(),
           devices: await this.solarManager.getDeviceInfo(),
         };
 
