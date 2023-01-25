@@ -52,7 +52,8 @@
       "solar-manager-status": "./dist/nodes/solar-manager-status/solar-manager-status.js",
       "solar-manager-car-charger": "./dist/nodes/solar-manager-car-charger/solar-manager-car-charger.js",
       "solar-manager-smart-plug": "./dist/nodes/solar-manager-smart-plug/solar-manager-smart-plug.js",
-      "solar-manager-switch": "./dist/nodes/solar-manager-switch/solar-manager-switch.js"
+      "solar-manager-switch": "./dist/nodes/solar-manager-switch/solar-manager-switch.js",
+      "solar-manager-data": "./dist/nodes/solar-manager-data/solar-manager-data.js"
     }
   },
   "dependencies": {

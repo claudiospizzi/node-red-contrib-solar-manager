@@ -1,5 +1,7 @@
 import axios, { AxiosRequestConfig } from 'axios';
+import { SolarManagerDeviceData } from './SolarManagerDeviceData';
 import { SolarManagerDeviceInfo } from './SolarManagerDeviceInfo';
+import { SolarManagerGatewayData } from './SolarManagerGatewayData';
 import { SolarManagerGatewayInfo } from './SolarManagerGatewayInfo';
 
 /**
@@ -36,6 +38,31 @@ export class SolarManager {
     const url = `${this.api_uri}/info/sensors/${this.solarManagerId}`;
     const result = await axios.get<SolarManagerDeviceInfo[]>(url, this.getRequestConfig());
     return result.data;
+  }
+
+  /**
+   * Getting the current data about the gateway.
+   * @returns The gateway data.
+   */
+  async getGatewayData(): Promise<SolarManagerGatewayData> {
+    const url = `${this.api_uri}/stream/gateway/${this.solarManagerId}`;
+    const result = await axios.get<SolarManagerGatewayData>(url, this.getRequestConfig());
+    const data: SolarManagerGatewayData = {
+      currentPowerConsumption: result.data.currentPowerConsumption,
+      currentPvGeneration: result.data.currentPvGeneration,
+      currentBatteryChargeDischarge: result.data.currentBatteryChargeDischarge,
+    };
+    return data;
+  }
+
+  /**
+   * Getting the current data about the sensors (devices).
+   * @returns The sensor data.
+   */
+  async getDeviceData(): Promise<SolarManagerDeviceData[]> {
+    const url = `${this.api_uri}/stream/gateway/${this.solarManagerId}`;
+    const result = await axios.get<{ devices: SolarManagerDeviceData[] }>(url, this.getRequestConfig());
+    return result.data.devices;
   }
 
   /**
